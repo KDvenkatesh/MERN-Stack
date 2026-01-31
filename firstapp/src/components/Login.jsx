@@ -13,8 +13,7 @@ export default function Login() {
     const newUser = { email, password }
 
     try {
-      const response = await axios.post(
-        "http://localhost:4000/api/login",
+      const response = await axios.post("https://mern-stack-5-8fqq.onrender.com/api/login",
         newUser
       )
 
